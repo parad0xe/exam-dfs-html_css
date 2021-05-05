@@ -1,0 +1,10 @@
+table {
+  overflow: auto;
+  display: inline-block;
+  width: 100%; }
+  table thead * {
+    text-align: center !important; }
+  table tr td:nth-child(2n) {
+    text-align: center !important; }
+  table th:not(:first-child), table td:not(:first-child) {
+    width: 100%; }

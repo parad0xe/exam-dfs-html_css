@@ -1,0 +1,282 @@
+@import "theme";
+
+// Setup
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+// Main Content
+.mdl-layout__content {
+    position: relative;
+    width: 100%;
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+
+    #app__banner {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        min-height: 800px;
+        background-color: #f3f3f3;
+
+
+        .banner__content {
+            color: #909090;
+            display: flex;
+            flex-direction: column;
+            font-weight: 500;
+
+            .title {
+                font-size: 4em;
+                line-height: 80px !important;
+            }
+
+            .description {
+                font-size: 1.5em;
+                line-height: 40px !important;
+
+            }
+        }
+
+        .pass-banner {
+            position: absolute;
+            top: 770px;
+            right: 100px;
+            background-color: $accent_color !important;
+
+            *
+            &:hover {
+                background-color: $accent_color !important;
+            }
+        }
+    }
+
+    #app__content {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+
+        .cover {
+            position: relative;
+            overflow: hidden;
+            object-fit: none;
+            width: 100%;
+            min-height: 300px;
+            padding: 20px 0;
+            font-weight: 200;
+            line-height: 1.1;
+            color: #b1b1b1;
+            background-color: #46494a;
+
+            &.cover-flex {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            &.cover-light {
+                color: white;
+            }
+
+            & > img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                position: absolute;
+                margin: auto;
+                top: 0;
+                right: 0;
+                left: 0;
+                bottom: 0;
+            }
+
+            & > .cover-overlay {
+                position: absolute;
+                top: 0;
+                right: 0;
+                left: 0;
+                bottom: 0;
+
+                &.cover-overlay-dark {
+                    background-color: #6f6d6db8;
+                }
+            }
+
+            & > div {
+                z-index: 10;
+            }
+
+            .cover-title {
+                font-size: 2.5em;
+            }
+
+            .cover-description {
+                font-size: 1.5em;
+                margin-top: 20px;
+            }
+
+            .cover-actions {
+                margin-top: 20px;
+            }
+        }
+
+        .list-actions {
+            span {
+                font-size: 6em;
+            }
+        }
+    }
+}
+
+// Material Design Edition
+.mdl-layout__header {
+    background-color: white !important;
+
+    & * {
+        color: #363636;
+    }
+
+    #fixed-header-drawer-exp::placeholder {
+        color: #bdbdbd !important;
+    }
+}
+.mdl-card .mdl-card__media {
+    height: 220px;
+
+    img {
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        object-fit: cover;
+    }
+}
+button {
+    &.mdl-button:not(.button-flat) {
+        background-color: $secondary_color !important;
+    }
+
+    &.button-flat {
+        &.button-primary {
+            color: $primary_color !important;
+        }
+
+        &.button-accent {
+            color: $accent_color !important;
+        }
+
+        &.button-transparent {
+            color: $accent_color !important;
+            padding: 0 !important;
+        }
+
+        &.button-danger {
+            color: $danger_color;
+        }
+
+        &.button-warning {
+            color: $warning_color;
+        }
+    }
+
+    &.button-primary:not(.button-flat) {
+        background-color: $primary_color !important;
+    }
+
+    &.button-accent:not(.button-flat) {
+        background-color: $accent_color !important;
+    }
+
+    &.button-transparent:not(.button-flat) {
+        background-color: transparent !important;
+        color: $accent_color !important;
+        padding: 0 !important;
+    }
+
+    &.button-danger:not(.button-flat) {
+        background-color: $danger_color;
+    }
+
+    &.button-warning:not(.button-flat) {
+        background-color: $warning_color;
+    }
+}
+.mdl-menu {
+    a {
+        text-decoration: none;
+
+        i {
+            vertical-align: middle;
+        }
+    }
+}
+
+// Media Queries
+.hidden-small-screen-only {
+    display: inline-block;
+}
+.appear-small-scren-only {
+    display: none;
+}
+@media all and (max-width: $max_phone_width) {
+    .hidden-small-screen-only {
+        display: none;
+    }
+
+    .appear-small-scren-only {
+        display: inline-block;
+    }
+
+    #app__banner {
+        font-size: 0.9em;
+        min-height: 500px !important;
+
+        .pass-banner {
+            top: 470px !important;
+            right: 70px !important;
+        }
+    }
+
+    .mdl-card {
+        width: auto;
+        height: auto;
+
+        .card-description {
+            display: none;
+        }
+    }
+
+    #mdl-layout__content .list-actions {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 0 !important;
+        font-size: 0.5em;
+
+        & > a {
+            background-color: #fbfbfb;
+            border-radius: 5px;
+
+            &:not(:first-child) {
+                margin-top: 10px;
+            }
+        }
+
+        & span {
+            padding: 20px 0 !important;
+        }
+    }
+
+    h1 {
+        font-size: 3.7em;
+    }
+}

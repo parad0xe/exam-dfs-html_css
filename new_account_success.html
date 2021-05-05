@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>AppName | New Account Success</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Roboto Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,500;1,300&display=swap"
+              rel="stylesheet">
+
+        <!-- Material Design Lite -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="./css/material.min.css">
+        <script defer src="js/material.min.js"></script>
+
+        <!-- Custom CSS / JS -->
+        <link rel="stylesheet" href="./css/tools.css">
+        <link rel="stylesheet" href="./css/app.css">
+        <link rel="stylesheet" href="./css/pages/new_account_success.css">
+        <script defer src="js/pages/new_account_success.js"></script>
+    </head>
+
+    <body>
+        <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+            <header class="mdl-layout__header mdl-layout__header--waterfall">
+                <div class="mdl-layout__header-row">
+                    <span class="mdl-layout-title">AppName</span>
+
+                    <div class="mdl-layout-spacer"></div>
+
+                    <button id="demo-menu-lower-right"
+                            class="mdl-button button-flat mdl-js-button mdl-button--icon">
+                        <i class="material-icons">more_vert</i>
+                    </button>
+
+                    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+                        for="demo-menu-lower-right">
+                        <a href="./new_account.html">
+                            <li class="mdl-menu__item">
+                                <label class="">
+                                    <i class="material-icons">account_circle</i>
+                                </label>
+                                Create account
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+            </header>
+
+            <div class="mdl-layout__drawer">
+                <span class="mdl-layout-title">AppName</span>
+                <nav class="mdl-navigation">
+                    <a class="mdl-navigation__link" href="./index.html">Home</a>
+                    <a class="mdl-navigation__link" href="admin_users.html">Admin Panel</a>
+                </nav>
+            </div>
+
+            <div class="mdl-layout__content">
+                <div id="app__content" style="margin-top: 45px;">
+                    <div class="container container-center">
+                        <div class="alert alert-success">Your account has been successfully created. You will be redirect automatically in <span class="js-remaining">6</span>s..</div>
+                    </div>
+
+                    <footer class="mdl-mini-footer">
+                        <div class="mdl-mini-footer__left-section">
+                            <div class="mdl-logo">AppName</div>
+
+                        </div>
+                        <div class="mdl-mini-footer__right-section">
+                            <ul class="mdl-mini-footer__link-list">
+                                <li><a href="">Help</a></li>
+                                <li><a href="">Privacy & Terms</a></li>
+                            </ul>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

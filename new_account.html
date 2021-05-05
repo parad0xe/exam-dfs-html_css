@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>AppName | New Account</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Roboto Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,500;1,300&display=swap"
+              rel="stylesheet">
+
+        <!-- Material Design Lite -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="./css/material.min.css">
+        <script defer src="js/material.min.js"></script>
+
+        <!-- Custom CSS / JS -->
+        <link rel="stylesheet" href="./css/tools.css">
+        <link rel="stylesheet" href="./css/app.css">
+    </head>
+
+    <body>
+        <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+            <header class="mdl-layout__header mdl-layout__header--waterfall">
+                <div class="mdl-layout__header-row">
+                    <span class="mdl-layout-title">AppName</span>
+
+                    <div class="mdl-layout-spacer"></div>
+
+                    <button id="demo-menu-lower-right"
+                            class="mdl-button button-flat mdl-js-button mdl-button--icon">
+                        <i class="material-icons">more_vert</i>
+                    </button>
+
+                    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+                        for="demo-menu-lower-right">
+                        <a href="./new_account.html">
+                            <li class="mdl-menu__item">
+                                <label class="">
+                                    <i class="material-icons">account_circle</i>
+                                </label>
+                                Create account
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+            </header>
+
+            <div class="mdl-layout__drawer">
+                <span class="mdl-layout-title">AppName</span>
+                <nav class="mdl-navigation">
+                    <a class="mdl-navigation__link" href="./index.html">Home</a>
+                    <a class="mdl-navigation__link" href="admin_users.html">Admin Panel</a>
+                </nav>
+            </div>
+
+            <div class="mdl-layout__content">
+                <div id="app__content" style="margin-top: 45px;">
+                    <div class="container container-center w100">
+                        <h3>Create your account</h3>
+
+                        <form action="./new_account_success.html" method="post">
+                            <div class="flex flex-column">
+                                <div class="flex flex-space-2">
+                                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                        <input class="mdl-textfield__input" type="text"
+                                               id="firstname">
+                                        <label class="mdl-textfield__label" for="firstname">Firstname</label>
+                                    </div>
+
+                                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                        <input class="mdl-textfield__input" type="text" id="lastname">
+                                        <label class="mdl-textfield__label" for="lastname">Lastname</label>
+                                    </div>
+                                </div>
+
+                                <div class="flex flex-space-2">
+                                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                        <input class="mdl-textfield__input" type="text" id="address">
+                                        <label class="mdl-textfield__label" for="address">Address</label>
+                                    </div>
+
+                                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                        <input class="mdl-textfield__input" type="text" id="country">
+                                        <label class="mdl-textfield__label" for="country">Country</label>
+                                    </div>
+                                </div>
+
+                                <div class="w100 mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                    <input class="mdl-textfield__input" type="email" id="email">
+                                    <label class="mdl-textfield__label" for="email">Email</label>
+                                </div>
+
+                                <div class="w100 mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                    <input class="mdl-textfield__input" type="text" id="pseudo">
+                                    <label class="mdl-textfield__label" for="pseudo">Pseudo</label>
+                                </div>
+
+                                <div class="flex flex-space-2">
+                                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                        <input class="mdl-textfield__input" type="text"
+                                               id="new_password">
+                                        <label class="mdl-textfield__label" for="new_password">New password</label>
+                                    </div>
+
+                                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                        <input class="mdl-textfield__input" type="text"
+                                               id="confirm_new_password">
+                                        <label class="mdl-textfield__label" for="confirm_new_password">Confirm new
+                                            password</label>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="w100 mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <input class="mdl-textfield__input" type="text" id="current_password">
+                                <label class="mdl-textfield__label" for="current_password">Current password</label>
+                            </div>
+
+                            <button class="block button-secondary color-white mdl-button mdl-js-button">
+                                Sign Up
+                            </button>
+                        </form>
+                    </div>
+
+                    <footer class="mdl-mini-footer">
+                        <div class="mdl-mini-footer__left-section">
+                            <div class="mdl-logo">AppName</div>
+                        </div>
+
+                        <div class="mdl-mini-footer__right-section">
+                            <ul class="mdl-mini-footer__link-list">
+                                <li><a href="">Help</a></li>
+                                <li><a href="">Privacy & Terms</a></li>
+                            </ul>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>AppName | Admin Users</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Roboto Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,500;1,300&display=swap"
+              rel="stylesheet">
+
+        <!-- Material Design Lite -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="./css/material.min.css">
+        <script defer src="js/material.min.js"></script>
+
+        <!-- Custom CSS / JS -->
+        <link rel="stylesheet" href="./css/tools.css">
+        <link rel="stylesheet" href="./css/app.css">
+        <link rel="stylesheet" href="./css/pages/admin_users.css">
+    </head>
+
+    <body>
+        <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+            <header class="mdl-layout__header mdl-layout__header--waterfall">
+                <div class="mdl-layout__header-row">
+                    <span class="mdl-layout-title">AppName</span>
+
+                    <div class="mdl-layout-spacer"></div>
+
+                    <button id="demo-menu-lower-right"
+                            class="mdl-button button-flat mdl-js-button mdl-button--icon">
+                        <i class="material-icons">more_vert</i>
+                    </button>
+
+                    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+                        for="demo-menu-lower-right">
+                        <a href="./new_account.html">
+                            <li class="mdl-menu__item">
+                                <label class="">
+                                    <i class="material-icons">account_circle</i>
+                                </label>
+                                Create account
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+            </header>
+
+            <div class="mdl-layout__drawer">
+                <span class="mdl-layout-title">AppName</span>
+                <nav class="mdl-navigation">
+                    <a class="mdl-navigation__link" href="./index.html">Home</a>
+                    <a class="mdl-navigation__link" href="./admin_users.html">Admin Panel</a>
+                </nav>
+            </div>
+
+            <div class="mdl-layout__content">
+                <div id="app__content" style="margin-top: 45px; margin-bottom: 20px">
+                    <div class="container w100">
+                        <div class="w100 flex flex-sb align-center">
+                            <h3>Admin Users</h3>
+                            <a href="index.html" class="hidden-small-screen-only">
+                                <button class="mdl-button mdl-js-button button-secondary color-white">< Back</button>
+                            </a>
+                        </div>
+
+                        <table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp">
+                            <thead>
+                                <tr>
+                                    <th class="mdl-data-table__cell--non-numeric">ID</th>
+                                    <th class="mdl-data-table__cell--non-numeric">Firstname</th>
+                                    <th class="mdl-data-table__cell--non-numeric">Lastname</th>
+                                    <th class="mdl-data-table__cell--non-numeric">Email</th>
+                                    <th class="mdl-data-table__cell--non-numeric">Pseudo</th>
+                                    <th class="mdl-data-table__cell--non-numeric">Actions</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td class="mdl-data-table__cell--non-numeric">1</td>
+                                    <td class="mdl-data-table__cell--non-numeric">Lorem Firstname</td>
+                                    <td class="mdl-data-table__cell--non-numeric">Lorem Lastname</td>
+                                    <td class="mdl-data-table__cell--non-numeric">lorem@email.com</td>
+                                    <td class="mdl-data-table__cell--non-numeric">Lorem pseudo</td>
+                                    <td class="mdl-data-table__cell--non-numeric ">
+                                        <button class="button-flat button-warning mdl-button mdl-js-button mdl-button--primary">
+                                            Edit
+                                        </button>
+                                        <button class="button-flat button-danger mdl-button mdl-js-button mdl-button--primary">
+                                            Delete
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="mdl-data-table__cell--non-numeric">2</td>
+                                    <td class="mdl-data-table__cell--non-numeric">Lorem Firstname</td>
+                                    <td class="mdl-data-table__cell--non-numeric">Lorem Lastname</td>
+                                    <td class="mdl-data-table__cell--non-numeric">lorem@email.com</td>
+                                    <td class="mdl-data-table__cell--non-numeric">Lorem pseudo</td>
+                                    <td class="mdl-data-table__cell--non-numeric ">
+                                        <button class="button-flat button-warning mdl-button mdl-js-button mdl-button--primary">
+                                            Edit
+                                        </button>
+                                        <button class="button-flat button-danger mdl-button mdl-js-button mdl-button--primary">
+                                            Delete
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="mdl-data-table__cell--non-numeric">3</td>
+                                    <td class="mdl-data-table__cell--non-numeric">Lorem Firstname</td>
+                                    <td class="mdl-data-table__cell--non-numeric">Lorem Lastname</td>
+                                    <td class="mdl-data-table__cell--non-numeric">lorem@email.com</td>
+                                    <td class="mdl-data-table__cell--non-numeric">Lorem pseudo</td>
+                                    <td class="mdl-data-table__cell--non-numeric ">
+                                        <button class="button-flat button-warning mdl-button mdl-js-button mdl-button--primary">
+                                            Edit
+                                        </button>
+                                        <button class="button-flat button-danger mdl-button mdl-js-button mdl-button--primary">
+                                            Delete
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="mdl-data-table__cell--non-numeric">4</td>
+                                    <td class="mdl-data-table__cell--non-numeric">Lorem Firstname</td>
+                                    <td class="mdl-data-table__cell--non-numeric">Lorem Lastname</td>
+                                    <td class="mdl-data-table__cell--non-numeric">lorem@email.com</td>
+                                    <td class="mdl-data-table__cell--non-numeric">Lorem pseudo</td>
+                                    <td class="mdl-data-table__cell--non-numeric ">
+                                        <button class="button-flat button-warning mdl-button mdl-js-button mdl-button--primary">
+                                            Edit
+                                        </button>
+                                        <button class="button-flat button-danger mdl-button mdl-js-button mdl-button--primary">
+                                            Delete
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="mdl-data-table__cell--non-numeric">5</td>
+                                    <td class="mdl-data-table__cell--non-numeric">Lorem Firstname</td>
+                                    <td class="mdl-data-table__cell--non-numeric">Lorem Lastname</td>
+                                    <td class="mdl-data-table__cell--non-numeric">lorem@email.com</td>
+                                    <td class="mdl-data-table__cell--non-numeric">Lorem pseudo</td>
+                                    <td class="mdl-data-table__cell--non-numeric ">
+                                        <button class="button-flat button-warning mdl-button mdl-js-button mdl-button--primary">
+                                            Edit
+                                        </button>
+                                        <button class="button-flat button-danger mdl-button mdl-js-button mdl-button--primary">
+                                            Delete
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="mdl-data-table__cell--non-numeric">6</td>
+                                    <td class="mdl-data-table__cell--non-numeric">Lorem Firstname</td>
+                                    <td class="mdl-data-table__cell--non-numeric">Lorem Lastname</td>
+                                    <td class="mdl-data-table__cell--non-numeric">lorem@email.com</td>
+                                    <td class="mdl-data-table__cell--non-numeric">Lorem pseudo</td>
+                                    <td class="mdl-data-table__cell--non-numeric ">
+                                        <button class="button-flat button-warning mdl-button mdl-js-button mdl-button--primary">
+                                            Edit
+                                        </button>
+                                        <button class="button-flat button-danger mdl-button mdl-js-button mdl-button--primary">
+                                            Delete
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="mdl-data-table__cell--non-numeric">7</td>
+                                    <td class="mdl-data-table__cell--non-numeric">Lorem Firstname</td>
+                                    <td class="mdl-data-table__cell--non-numeric">Lorem Lastname</td>
+                                    <td class="mdl-data-table__cell--non-numeric">lorem@email.com</td>
+                                    <td class="mdl-data-table__cell--non-numeric">Lorem pseudo</td>
+                                    <td class="mdl-data-table__cell--non-numeric ">
+                                        <button class="button-flat button-warning mdl-button mdl-js-button mdl-button--primary">
+                                            Edit
+                                        </button>
+                                        <button class="button-flat button-danger mdl-button mdl-js-button mdl-button--primary">
+                                            Delete
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="mdl-data-table__cell--non-numeric">8</td>
+                                    <td class="mdl-data-table__cell--non-numeric">Lorem Firstname</td>
+                                    <td class="mdl-data-table__cell--non-numeric">Lorem Lastname</td>
+                                    <td class="mdl-data-table__cell--non-numeric">lorem@email.com</td>
+                                    <td class="mdl-data-table__cell--non-numeric">Lorem pseudo</td>
+                                    <td class="mdl-data-table__cell--non-numeric ">
+                                        <button class="button-flat button-warning mdl-button mdl-js-button mdl-button--primary">
+                                            Edit
+                                        </button>
+                                        <button class="button-flat button-danger mdl-button mdl-js-button mdl-button--primary">
+                                            Delete
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="mdl-data-table__cell--non-numeric">9</td>
+                                    <td class="mdl-data-table__cell--non-numeric">Lorem Firstname</td>
+                                    <td class="mdl-data-table__cell--non-numeric">Lorem Lastname</td>
+                                    <td class="mdl-data-table__cell--non-numeric">lorem@email.com</td>
+                                    <td class="mdl-data-table__cell--non-numeric">Lorem pseudo</td>
+                                    <td class="mdl-data-table__cell--non-numeric ">
+                                        <button class="button-flat button-warning mdl-button mdl-js-button mdl-button--primary">
+                                            Edit
+                                        </button>
+                                        <button class="button-flat button-danger mdl-button mdl-js-button mdl-button--primary">
+                                            Delete
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="mdl-data-table__cell--non-numeric">10</td>
+                                    <td class="mdl-data-table__cell--non-numeric">Lorem Firstname</td>
+                                    <td class="mdl-data-table__cell--non-numeric">Lorem Lastname</td>
+                                    <td class="mdl-data-table__cell--non-numeric">lorem@email.com</td>
+                                    <td class="mdl-data-table__cell--non-numeric">Lorem pseudo</td>
+                                    <td class="mdl-data-table__cell--non-numeric ">
+                                        <button class="button-flat button-warning mdl-button mdl-js-button mdl-button--primary">
+                                            Edit
+                                        </button>
+                                        <button class="button-flat button-danger mdl-button mdl-js-button mdl-button--primary">
+                                            Delete
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <a href="index.html" class="p-v20 appear-small-scren-only">
+                            <button class="mdl-button mdl-js-button button-secondary color-white">< Back</button>
+                        </a>
+                    </div>
+
+                    <footer class="mdl-mini-footer">
+                        <div class="mdl-mini-footer__left-section">
+                            <div class="mdl-logo">AppName</div>
+                        </div>
+
+                        <div class="mdl-mini-footer__right-section">
+                            <ul class="mdl-mini-footer__link-list">
+                                <li><a href="">Help</a></li>
+                                <li><a href="">Privacy & Terms</a></li>
+                            </ul>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

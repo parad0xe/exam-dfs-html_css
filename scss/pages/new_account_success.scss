@@ -1,0 +1,5 @@
+@import "../theme";
+
+#app__content {
+    min-height: calc(100vh - #{$app_header_height}) !important;
+}

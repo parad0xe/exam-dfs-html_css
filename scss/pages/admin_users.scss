@@ -1,0 +1,20 @@
+@import "../theme";
+
+// Material Design Edition
+table {
+    overflow: auto;
+    display: inline-block;
+    width: 100%;
+
+    & thead * {
+        text-align: center !important;
+    }
+
+    & tr td:nth-child(2n) {
+        text-align: center !important;
+    }
+
+    & th:not(:first-child), & td:not(:first-child) {
+        width: 100%;
+    }
+}

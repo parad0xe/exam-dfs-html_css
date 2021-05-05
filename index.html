@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>AppName | Index</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Roboto Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,500;1,300&display=swap"
+              rel="stylesheet">
+
+        <!-- Material Design Lite -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="./css/material.min.css">
+        <script defer src="js/material.min.js"></script>
+
+        <!-- Custom CSS / JS -->
+        <link rel="stylesheet" href="./css/tools.css">
+        <link rel="stylesheet" href="./css/app.css">
+        <script defer src="js/pages/index.js" type="module"></script>
+    </head>
+
+    <body>
+        <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+            <header class="mdl-layout__header mdl-layout__header--waterfall">
+                <div class="mdl-layout__header-row">
+                    <span class="mdl-layout-title">AppName</span>
+
+                    <div class="mdl-layout-spacer"></div>
+
+                    <button id="demo-menu-lower-right"
+                            class="mdl-button button-flat mdl-js-button mdl-button--icon">
+                        <i class="material-icons">more_vert</i>
+                    </button>
+
+                    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+                        for="demo-menu-lower-right">
+                        <a href="./new_account.html">
+                            <li class="mdl-menu__item">
+                                <label class="">
+                                    <i class="material-icons">account_circle</i>
+                                </label>
+                                Create account
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+            </header>
+
+            <div class="mdl-layout__drawer">
+                <span class="mdl-layout-title">AppName</span>
+                <nav class="mdl-navigation">
+                    <a class="mdl-navigation__link" href="./index.html">Home</a>
+                    <a class="mdl-navigation__link" href="admin_users.html">Admin Panel</a>
+                </nav>
+            </div>
+
+            <div class="mdl-layout__content">
+                <div id="app__banner" class="mdl-typography--text-center">
+                    <div class="banner__content">
+                        <div class="title">Lorem ipsum dolor sit amet</div>
+                        <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi corporis culpa</div>
+                    </div>
+
+                    <a href="#app__content">
+                        <button class="pass-banner mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+                            <i class="material-icons">expand_more</i>
+                        </button>
+                    </a>
+                </div>
+
+                <div id="app__content" style="margin-top: 45px;">
+                    <div class="p20">
+                        <div class="container container-center">
+                            <h3>Last news</h3>
+
+                            <div class="grid-list js-grid-list">
+                                <div class="mdl-card mdl-shadow--4dp">
+                                    <div class="mdl-card__media">
+                                        <img src="images/image_1.jpg" alt="">
+                                    </div>
+
+                                    <div class="card-date mdl-card__supporting-text">
+                                        taken March 24th, 2014
+                                    </div>
+
+                                    <div class="card-description card-description mdl-card__supporting-text">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci assumenda
+                                        corporis exercitationem fuga, libero minima, minus nulla odio omnis perferendis
+                                        perspiciatis placeat provident qui repellendus sunt?
+                                    </div>
+
+                                    <div class="mdl-card__actions">
+                                        <a href="./read_more.html">
+                                            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+                                                Read More
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="mdl-card mdl-shadow--4dp">
+                                    <div class="mdl-card__media">
+                                        <img src="images/image_1.jpg" alt="">
+                                    </div>
+
+                                    <div class="card-date mdl-card__supporting-text">
+                                        taken March 24th, 2014
+                                    </div>
+
+                                    <div class="card-description mdl-card__supporting-text">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores dolore
+                                        doloribus ducimus eveniet in molestiae nisi nobis quas vitae! Blanditiis enim
+                                        expedita iste iusto magni officiis, pariatur saepe sequi vitae?
+                                    </div>
+
+                                    <div class="mdl-card__actions">
+                                        <a href="./read_more.html">
+                                            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+                                                Read More
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="mdl-card mdl-shadow--4dp">
+                                    <div class="mdl-card__media">
+                                        <img src="images/image_1.jpg" alt="">
+                                    </div>
+
+                                    <div class="card-date mdl-card__supporting-text">
+                                        taken March 24th, 2014
+                                    </div>
+
+                                    <div class="card-description mdl-card__supporting-text">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam distinctio eum
+                                        eveniet ipsam iste iure modi nemo neque optio qui quis reprehenderit, saepe suscipit
+                                        voluptatem. Aut delectus maxime repellendus.
+                                    </div>
+
+                                    <div class="mdl-card__actions">
+                                        <a href="./read_more.html">
+                                            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+                                                Read More
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="mdl-card mdl-shadow--4dp">
+                                    <div class="mdl-card__media">
+                                        <img src="images/image_1.jpg" alt="">
+                                    </div>
+
+                                    <div class="card-date mdl-card__supporting-text">
+                                        taken March 24th, 2014
+                                    </div>
+
+                                    <div class="card-description mdl-card__supporting-text">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum eum impedit ipsam
+                                        ipsum similique? Doloremque dolores eius fuga, itaque iure mollitia nobis optio
+                                        placeat provident quia, quibusdam repellat vel voluptatem.
+                                    </div>
+
+                                    <div class="mdl-card__actions">
+                                        <a href="./read_more.html">
+                                            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+                                                Read More
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="mdl-card mdl-shadow--4dp">
+                                    <div class="mdl-card__media">
+                                        <img src="images/image_1.jpg" alt="">
+                                    </div>
+
+                                    <div class="card-date mdl-card__supporting-text">
+                                        taken March 24th, 2014
+                                    </div>
+
+                                    <div class="card-description mdl-card__supporting-text">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias amet assumenda at
+                                        cumque, dolorem earum error fuga iure iusto, odio, optio provident quibusdam quidem
+                                        quis quos ratione tempora totam vel.
+                                    </div>
+
+                                    <div class="mdl-card__actions">
+                                        <a href="./read_more.html">
+                                            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+                                                Read More
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="mdl-card mdl-shadow--4dp">
+                                    <div class="mdl-card__media">
+                                        <img src="images/image_1.jpg" alt="">
+                                    </div>
+
+                                    <div class="card-date mdl-card__supporting-text">
+                                        taken March 24th, 2014
+                                    </div>
+
+                                    <div class="card-description mdl-card__supporting-text">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut corporis earum eius
+                                        enim, explicabo fugit illum inventore ipsa itaque iusto nesciunt, perspiciatis
+                                        placeat soluta temporibus veritatis? Aliquam animi natus officia!
+                                    </div>
+
+                                    <div class="mdl-card__actions">
+                                        <a href="./read_more.html">
+                                            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+                                                Read More
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cover cover-flex cover-light">
+                        <img src="images/image_2.jpg" alt="">
+
+                        <div class="cover-overlay cover-overlay-dark"></div>
+
+                        <div class="container container-center">
+                            <div>
+                                <div class="cover-title">
+                                    Lorem ipsum dolor sit amet
+                                </div>
+
+                                <div class="cover-description">
+                                    Culpa dicta ducimus, eum ipsa libero non officia quod reiciendis rem repellendus
+                                    sunt ut
+                                    vero voluptatum! Dicta dolorum eius eos ex inventore modi officiis placeat
+                                    reiciendis
+                                    repellendus, sequi sunt voluptatibus?
+                                </div>
+
+                                <div class="cover-actions">
+                                    <a href="./read_more.html">
+                                        <button class="button-transparent mdl-button">
+                                            See More >
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p20">
+                        <div class="container container-center">
+                            <h3 class="text-left">Most popular</h3>
+
+                            <div class="grid-list">
+                                <div class="mdl-card mdl-shadow--4dp">
+                                    <div class="mdl-card__media">
+                                        <img src="images/image_1.jpg" alt="">
+                                    </div>
+
+                                    <div class="card-date mdl-card__supporting-text">
+                                        taken March 24th, 2014
+                                    </div>
+
+                                    <div class="card-description card-description mdl-card__supporting-text">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci assumenda
+                                        corporis exercitationem fuga, libero minima, minus nulla odio omnis perferendis
+                                        perspiciatis placeat provident qui repellendus sunt?
+                                    </div>
+
+                                    <div class="mdl-card__actions">
+                                        <a href="./read_more.html">
+                                            <button class="button-primary mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+                                                Read More
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="mdl-card mdl-shadow--4dp">
+                                    <div class="mdl-card__media">
+                                        <img src="images/image_1.jpg" alt="">
+                                    </div>
+
+                                    <div class="card-date mdl-card__supporting-text">
+                                        taken March 24th, 2014
+                                    </div>
+
+                                    <div class="card-description mdl-card__supporting-text">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores dolore
+                                        doloribus ducimus eveniet in molestiae nisi nobis quas vitae! Blanditiis enim
+                                        expedita iste iusto magni officiis, pariatur saepe sequi vitae?
+                                    </div>
+
+                                    <div class="mdl-card__actions">
+                                        <a href="./read_more.html">
+                                            <button class="button-primary mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+                                                Read More
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="mdl-card mdl-shadow--4dp">
+                                    <div class="mdl-card__media">
+                                        <img src="images/image_1.jpg" alt="">
+                                    </div>
+
+                                    <div class="card-date mdl-card__supporting-text">
+                                        taken March 24th, 2014
+                                    </div>
+
+                                    <div class="card-description mdl-card__supporting-text">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam distinctio eum
+                                        eveniet ipsam iste iure modi nemo neque optio qui quis reprehenderit, saepe suscipit
+                                        voluptatem. Aut delectus maxime repellendus.
+                                    </div>
+
+                                    <div class="mdl-card__actions">
+                                        <a href="./read_more.html">
+                                            <button class="button-primary mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+                                                Read More
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <footer class="mdl-mini-footer">
+                        <div class="mdl-mini-footer__left-section">
+                            <div class="mdl-logo">AppName</div>
+                        </div>
+
+                        <div class="mdl-mini-footer__right-section">
+                            <ul class="mdl-mini-footer__link-list">
+                                <li><a href="">Help</a></li>
+                                <li><a href="">Privacy & Terms</a></li>
+                            </ul>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -44,7 +44,8 @@ html, body {
   .mdl-layout__content #app__content {
     position: relative;
     display: inline-block;
-    width: 100%; }
+    width: 100%;
+    height: auto; }
     .mdl-layout__content #app__content .cover {
       position: relative;
       overflow: hidden;
